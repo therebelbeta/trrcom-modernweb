@@ -1,5 +1,8 @@
 body{
-	
+	background-color:@whitesmoke;
+	background-image:url('../img/loader-large.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
 	h1{
 
 	}
@@ -94,8 +97,23 @@ body{
 
 	}
 	section{
+		display:none;
 		height:100%;
 		width:100%;
+		&[dark]{
+			background-color:@blacksmoke;
+			color:@lighttext;
+			.ui.segment{
+				background-color:@black;
+				color:@lighttext;
+				border-color:@darkgray;
+				
+			}
+		}
+		&[light]{
+			background-color:@whitesmoke;
+			color:@darktext;
+		}
 	}
 
 }

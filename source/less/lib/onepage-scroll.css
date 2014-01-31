@@ -57,6 +57,8 @@ body, .onepage-wrapper, html {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  -webkit-box-shadow: 0 0 1px 1px whitesmoke;
+  box-shadow: 0 0 1px 1px whitesmoke;
 }
 
 .onepage-pagination li a.active:before{

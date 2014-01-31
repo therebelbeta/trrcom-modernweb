@@ -8,6 +8,7 @@ var ॐ = {};
 var om = ॐ;
 
 $(document).on('ready',function(){
+
 	$(".wrapper").onepage_scroll({
 	   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
 	   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
@@ -23,4 +24,5 @@ $(document).on('ready',function(){
 	                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
 	                                    // the browser's width is less than 600, the fallback will kick in.
 	});
+	$("section").delay(1000).each(function(){$(this).fadeIn('slow');});
 });
