@@ -3,6 +3,11 @@ body{
 	background-image:url('../img/loader-large.gif');
 	background-repeat:no-repeat;
 	background-position:center center;
+	box-sizing:border-box;
+	font-family: source-sans-pro, sans-serif;
+	*{
+		box-sizing:border-box;
+	}
 	h1{
 
 	}
@@ -96,6 +101,26 @@ body{
 	textarea{
 
 	}
+	i.icon.swipenav{
+		font-size:4.5em;
+		opacity:0.75;
+		color:#999999;
+		&:hover{
+			opacity:1;
+		}
+		&#navup{
+			position:absolute;
+			top:20px;
+			left:50%;
+			margin-left:-33px;
+		}
+		&#navdown{
+			position:absolute;
+			bottom:20px;
+			left:50%;
+			margin-left:-33px;
+		}
+	}
 	section{
 		display:none;
 		height:100%;
@@ -113,6 +138,35 @@ body{
 		&[light]{
 			background-color:@whitesmoke;
 			color:@darktext;
+		}
+		&#main{
+			padding:40px;
+			padding-top:0px;
+			padding-bottom:0px;
+			text-align:center;
+			.float-wrapper{
+				width:100%;
+				margin:auto;
+				max-width:1000px;
+				position:relative;
+				top:50%;
+				margin-top:-324px;
+			}
+			.column{
+				text-align:center;
+				img{
+					max-height:80%;
+				}
+				h1,h2{
+					opacity:.75;
+				}
+			}
+			.tagline{
+				text-align:center;
+				font-size:4em;
+				line-height:1em;
+			}
+			
 		}
 	}
 

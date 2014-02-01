@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+  <script src="//use.edgefonts.net/source-sans-pro.js"></script>
   <link rel="stylesheet" href="css/lib/lib.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -20,11 +20,29 @@
 <body>
   <nav></nav>
   <div class="wrapper">
-    <section id="main" light>Main</section>
+    <section id="main" light>
+      <div class="float-wrapper">
+        <div class="middle aligned two column stackable ui grid">
+          <div class="column">
+            <img src="img/angularjs.png" alt="Angular.js">
+            <h1>angular.js</h1>
+            <h2>&lt;front-end framework&gt;</h2>
+          </div>
+          <div class="column">
+            <img src="img/nodejs.png" alt="Angular.js">
+            <h1>node.js</h1>
+            <h2>&lt;server-side scripting&gt;</h2>
+          </div>
+        </div>
+        <h1 class="tagline">modern technologies for a modern web</h1>
+      </div>
+    </section>
     <section id="stack" dark>Stack</section>
     <section id="projects" light>Projects</section>
     <section id="about" dark>About</section>
   </div>
-
+  <i id="navup" class="up arrow icon swipenav" onclick="$('.wrapper').moveUp();"></i>
+  <i id="navdown" class="down arrow icon swipenav" onclick="$('.wrapper').moveDown();"></i>
+  
 </body>
 </html>
