@@ -37,9 +37,127 @@
         <h1 class="tagline">modern technologies for a modern web</h1>
       </div>
     </section>
-    <section id="stack" dark>Stack</section>
-    <section id="projects" light>Projects</section>
-    <section id="about" dark>About</section>
+    <section id="stack" dark>
+      <div class="float-wrapper">
+        <div class="ui two column grid">
+          <div class="column">
+            <div class="ui fluid form segment">
+              <h3 class="ui header">Why Angular+Node?</h3>
+              <div class="ui list">
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <p><b>Asynchronous</b> - Node, as opposed to apache, delivers content <em>asynchronously</em>, meaning it can deliver content simultaneously whether or not another process is waiting. This speeds up response times tenfold, and allows for much more complex applications. Here's an example of how it works:</p>
+                  <img src="img/nodejs-async.png" alt="">
+                  <p>Since Node doesn't have to spin up a new instance every time a request is made, it uses drastically less memory, and can handle thousands more requests at a time.</p>
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>Speed</b> - Node + Angular consistently outperforms Apache + PHP is server response times.
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>Maintainability</b> - Node + Angular separates the concerns of developers, allowing for easier readable and maintanable code.
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>Everything is Javascript</b> - With Node, there is no need for a "front-end" and a "server-side" developer. Simply hire one developer who can work with the full stack!
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>Open-source &amp; Community-driven</b> - Node + Angular are supported by legions of enthusiasts, with forums, wikis, how-tos and documentation litering the interwebs.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui fluid form segment">
+              <h3 class="ui header">What else can you work in?</h3>
+              <div class="ui list">
+                <span class="item">
+                  While I prefer working in Angular+Node, sometimes it's not right for the job. This portfolio, for instance, is written in a more simple jQuery frameork, since a full MVC would have been overkill. I still used Node, however, for compiling and optimizing. Here are a few things I am also known for working in:
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>jQuery</b> - The backbone of the internet. Used for DOM manipulations and animations.
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>PHP</b> - An outdated (and frankly slow) server-side scripting language. Used by Wordpress, Mediawiki and many other CMS's.
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>MySQL</b> - The de facto standard for database storage.
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>PostGresSQL</b> - An open source version of MySQL, with added support for JSON bindings. Definitely a big hitter!
+                </span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                  <b>Python</b> - Need something more robust? Python can get the job done! Server-side scripting at its best.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" light>
+      <div class="float-wrapper">
+        <div class="ui two column grid">
+          <div class="column">
+            <div class="ui fluid form segment">
+              <h3 class="ui header">Professional Work</h3>
+              <div class="ui list">
+                <span class="item">
+                  <img src="img/estee-screenshot.png" alt="">
+                  <p><b>Estee Lauder</b> - Architected and maintained the Beauty of Night campaign website. Build in jQuery.</p>
+                </span>
+                <span class="item">
+                  <img src="img/martha-screenshot.png" alt="">
+                  <p><b>Martha Stewart Wall Organizer</b> - The Wall configurator is an online test-run of the Wall Organizer product sold at Staples. Build in jQuery and jQuery UI.</p>
+                </span>
+                <span class="item">
+                  <img src="img/adobe-screenshot.png" alt="">
+                  <p><b>Adobe Analytics Assessment</b> - A tool for assessing the value of your web analytics solution. Build in jQuery and jQuery Mobile. Being rebuilt currently in Angular.</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui fluid form segment">
+              <h3 class="ui header">Side Projects | <a href="https://github.com/therebelrobot"><i class="github sign icon"></i></a></h3>
+              <div class="ui list">
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                 <b>generator-ngless</b> - 
+                Angular/LESScss generator for yeoman</span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                 <b>generator-ng-jade-less</b> - 
+                A yeoman Generator with Jade and LessCSS compiling, and AngularJS architecture</span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                 <b>jquery.ui.draggable.spawner</b> - 
+                A short plugin that enables mousedown to create a new draggable element, and transfer the mousedown event to the new element.</span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                 <b>generator-yeoman-dynamic</b> - 
+                A dynamic yeoman generator template, which scans the template files and duplicates them exactly</span>
+                <span class="item">
+                  <i class="right triangle icon"></i>
+                 <b>gulp-angular-less-boilerplate</b> -
+                A boilerplate for an angular/less app using gulp dev management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" dark>
+      <div class="float-wrapper">
+      </div>
+    </section>
   </div>
   <i id="navup" class="up arrow icon swipenav" onclick="$('.wrapper').moveUp();"></i>
   <i id="navdown" class="down arrow icon swipenav" onclick="$('.wrapper').moveDown();"></i>
