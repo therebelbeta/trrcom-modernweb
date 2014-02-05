@@ -19,9 +19,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/js'));
 
   // Copy vendor files
-  gulp.src(['source/lib/jquery/jquery.min.js','source/js/lib/**'])
-    .pipe(concat("lib.js"))
-    .pipe(gulp.dest('build/js'));
+ 
 });
 
 gulp.task('less', function () {
@@ -42,6 +40,9 @@ gulp.task('copy', function() {
 
   gulp.src('source/index.html')
     .pipe(gulp.dest('build'));
+
+  gulp.src('source/js/lib/lib.js')
+    .pipe(gulp.dest('build/js'));
 
   gulp.src('source/assets/fonts/**')
     .pipe(gulp.dest('build/fonts'));
